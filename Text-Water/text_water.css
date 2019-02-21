@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    font-family: monospace,sans-serif;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loader h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 10em;
+    color: rgba(255,255,255,.1);
+    background-image: url(water.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+    border: 1px solid red;
+}
+@keyframes animate {
+    0% {
+        background-position: left 0px;
+    }
+     100% {
+        background-position: left 1000px;
+    }
+}

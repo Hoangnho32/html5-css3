@@ -1,0 +1,54 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: relative;
+    animation-name: henkei;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+@keyframes henkei {
+    0% {
+        background: red;
+        border-radius: 0 0 0 0;
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        background: blue;
+        border-radius: 50% 0 0 0;
+        left: 600px;
+        top: 0;
+    }
+
+    50% {
+        background: green;
+        border-radius: 50% 50% 0 0;
+        left: 600px;
+        top: 600px;
+    }
+
+    75% {
+        background: yellow;
+        border-radius: 50% 50% 50% 0;
+        left: 0px;
+        top: 600px;
+    }
+
+    100% {
+        background: blue;
+        border-radius: 50% 50% 50% 50%;
+        left: 0px;
+        top: 0px;
+    }
+}
